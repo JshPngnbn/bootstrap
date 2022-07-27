@@ -1,0 +1,278 @@
+<!DOCTYPE >
+<html>
+  <head>
+    <title>Vibe</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+        display: flex;
+        align-items: center;
+        width: 50%;
+      }
+     
+     
+
+      .fakeimg {
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body class="body">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand float-on-hover" href="homepage.html">Vibe</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item float-on-hover">
+              <a class="nav-link" aria-current="page" href="homepage.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item float-on-hover">
+              <a class="nav-link active" href="lyrics.html">Songs</a>
+            </li>
+            <li class="nav-item float-on-hover">
+              <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Tutorial
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="chords.html">Chords</a>
+                </li>
+                <li><a class="dropdown-item" href="tabs.html">Tabs</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="strumming.html">Strumming</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="search">
+            <input
+              class="inputSearch me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="button-74" role="button">Search</button>
+          </form>
+          <button class="button-74" role="button">Sign In</button>
+        </div>
+      </div>
+    </nav>
+    <div class="az">
+      <a href="a.html" class="songlink">A</a>
+      <a href="b.html" class="songlink">B</a>
+      <a href="c.html" class="songlink">C</a>
+      <a href="d.html" class="songlink">D</a>
+      <a href="e.html" class="songlink">E</a>
+      <a href="f.html" class="songlink">F</a>
+      <a href="g.html" class="songlink">G</a>
+      <a href="h.html" class="songlink">H</a>
+      <a href="i.html" class="songlink">I</a>
+      <a href="j.html" class="songlink">J</a>
+      <a href="k.html" class="songlink">K</a>
+      <a href="l.html" class="songlink">L</a>
+      <a href="m.html" class="songlink">M</a>
+      <a href="n.html" class="songlink">N</a>
+      <a href="o.html" class="songlink">O</a>
+      <a href="opm.html" class="songlink">OPM</a>
+      <a href="p.html" class="songlink">P</a>
+      <a href="q.html" class="songlink">Q</a>
+      <a href="r.html" class="songlink">R</a>
+      <a href="s.html" class="songlink">S</a>
+      <a href="t.html" class="songlink">T</a>
+      <a href="u.html" class="songlink">U</a>
+      <a href="v.html" class="songlink">V</a>
+      <a href="w.html" class="songlink">W</a>
+      <a href="x.html" class="songlink">X</a>
+      <a href="y.html" class="songlink">Y</a>
+      <a href="z.html" class="songlink">Z</a>
+    </div>
+    <br />
+
+    <audio id="myAudio">
+      <source
+        src="images/Lil Nas X - MONTERO (Call Me By Your Name) (Official Video).mp3"
+        type="audio/mpeg"
+      />
+      Your browser does not support the audio element.
+    </audio>
+
+    <div class="container">
+      <h2>Ed Sheeran - Bad Habits</h2>
+      <div class="play">
+        <button class="btn">
+          <i class="fa fa-play" onclick="playAudio()"></i>
+        </button>
+        <button class="btn">
+          <i class="fa fa-pause" onclick="pauseAudio()"></i>
+        </button>
+      </div>
+
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Watch Music Video
+      </button>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                Ed Sheeran - Bad Habits
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <video id="myVideo" width="100%" controls>
+                <source
+                  src="images/Lil Nas X - MONTERO (Call Me By Your Name) (Official Video).mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+                onclick="pauseVid()"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+          <span>One, two, three, four  <br/>
+            Ooh, ooh  <br/>  <br/>
+            Every time you come around, you know I can't say no  <br/>
+            Every time the sun goes down, I let you take control  <br/>
+            I can feel the paradise before my world implodes  <br/>
+            And tonight had something wonderful  <br/>  <br/>
+            My bad habits lead to late nights, endin' alone  <br/>
+            Conversations with a stranger I barely know  <br/>
+            Swearin' this will be the last, but it probably won't  <br/>
+            I got nothin' left to lose, or use, or do  <br/>  <br/>
+            My bad habits lead to wide eyes stare into space  <br/>
+            And I know I'll lose control of the things that I say  <br/>
+            Yeah, I was lookin' for a way out, now I can't escape  <br/>
+            Nothin' happens after two, it's true, it's true  <br/>
+            My bad habits lead to you  <br/>  <br/>
+            Ooh-ooh, ooh-ooh  <br/>
+            My bad habits lead to you  <br/>
+            Ooh-ooh, ooh-ooh  <br/>
+            My bad habits lead to you  <br/>  <br/>
+            Every pure intention ends when the good times start  <br/>
+            Fallin' over everything to reach the first time's spark  <br/>
+            It started under neon lights and then it all got dark  <br/>
+            I only know how to go too far  <br/>  <br/>
+            My bad habits lead to late nights, endin' alone  <br/>
+            Conversations with a stranger I barely know  <br/>
+            Swearin' this will be the last, but it probably won't  <br/>
+            I got nothin' left to lose, or use, or do  <br/>  <br/>
+            My bad habits lead to wide eyes stare into space  <br/>
+            And I know I'll lose control of the things that I say  <br/>
+            Yeah, I was lookin' for a way out, now I can't escape  <br/>
+            Nothin' happens after two, it's true, it's true  <br/>
+            My bad habits lead to you  <br/>  <br/>
+            Ooh-ooh, ooh-ooh  <br/>
+            My bad habits lead to you  <br/>
+            Ooh-ooh, ooh-ooh  <br/>  <br/>
+            We took the long way 'round  <br/>
+            Burned 'til the fun ran out, now  <br/>  <br/>
+            My bad habits lead to late nights, endin' alone  <br/>
+            Conversations with a stranger I barely know  <br/>
+            Swearin' this will be the last, but it probably won't  <br/>
+            I got nothin' left to lose, or use, or do  <br/>  <br/>
+            My bad habits lead to wide eyes stare into space  <br/>
+            And I know I'll lose control of the things that I say  <br/>
+            Yeah, I was lookin' for a way out, now I can't escape  <br/>
+            Nothin' happens after two, it's true, it's true  <br/>
+            My bad habits lead to you  <br/>  <br/>
+            Ooh-ooh, ooh-ooh  <br/>
+            My bad habits lead to you  <br/>
+            Ooh-ooh, ooh-ooh  <br/>
+            My bad habits lead to you
+    </span>
+        <br/>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    var x = document.getElementById("myAudio");
+
+    function playAudio() {
+      x.play();
+    }
+
+    function pauseAudio() {
+      x.pause();
+    }
+    var vid = document.getElementById("myVideo");
+    function pauseVid() {
+      vid.pause();
+    }
+  </script>
+</html>
